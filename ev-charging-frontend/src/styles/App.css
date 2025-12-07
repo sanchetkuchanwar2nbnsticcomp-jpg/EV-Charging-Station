@@ -1,0 +1,159 @@
+/* ------------------------------
+   GLOBAL RESET & BASE STYLES
+------------------------------ */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #000; /* Dark base background */
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+/* ------------------------------
+   MAIN WRAPPER
+------------------------------ */
+main {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 80vh;
+  overflow-x: hidden;
+}
+
+/* ------------------------------
+   HERO SECTION
+------------------------------ */
+.hero-full,
+.hero,
+.hero-section {
+  position: relative;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full screen height */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.45);
+  transition: opacity 1s ease-in-out;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.65)
+  );
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 2rem;
+}
+
+.cta-button,
+.hero-btn {
+  background-color: #e30022;
+  color: #fff;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cta-button:hover,
+.hero-btn:hover {
+  background-color: #ff3b3b;
+  transform: scale(1.05);
+}
+
+/* ------------------------------
+   NAVBAR
+------------------------------ */
+.navbar {
+  background-color: #111;
+  color: #fff;
+  padding: 1rem 2rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid #222;
+}
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  color: #bbb;
+  background: #111;
+  font-size: 0.9rem;
+  border-top: 1px solid #222;
+  width: 100%;
+}
+
+/* ------------------------------
+   RESPONSIVE DESIGN
+------------------------------ */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-btn {
+    padding: 0.8rem 1.8rem;
+  }
+}

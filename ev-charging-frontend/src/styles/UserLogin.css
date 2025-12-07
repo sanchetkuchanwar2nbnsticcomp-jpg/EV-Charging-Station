@@ -1,0 +1,132 @@
+/* ================================
+   PREMIUM GLASSMORPHISM LOGIN UI
+   ================================ */
+
+body {
+  background: #000;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Outer center wrapper */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  padding: 20px;
+}
+
+/* Glass card */
+.login-container {
+  width: 420px;
+  padding: 35px 35px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 0.4s ease-in-out;
+  text-align: center;
+}
+
+/* Title */
+.login-container h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
+}
+
+/* ===============================
+   Form Elements
+   =============================== */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Labels */
+.form-group label {
+  font-size: 14px;
+  color: #e0e0e0;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Premium input */
+.form-group input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  transition: 0.25s ease-in-out;
+}
+
+/* Focus neon glow */
+.form-group input:focus {
+  outline: none;
+  border-color: #0a84ff;
+  box-shadow: 0 0 10px #0a84ff;
+}
+
+/* Error text */
+.error-text {
+  color: #ff4a4a;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: -10px;
+}
+
+/* ===============================
+   Login Button
+   =============================== */
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+
+  background: linear-gradient(135deg, #007bff, #005ce6);
+  color: #ffffff;
+
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 20px rgba(0, 123, 255, 0.4);
+}
+
+/* Button hover */
+.login-btn:hover {
+  background: linear-gradient(135deg, #218bff, #0066ff);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(33, 139, 255, 0.6);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* Responsive fix */
+@media (max-width: 480px) {
+  .login-container {
+    width: 92%;
+    padding: 30px 25px;
+  }
+}

@@ -1,0 +1,124 @@
+/* ---------- PAGE WRAPPER ---------- */
+.admin-page {
+  min-height: 100vh;
+  background: #0d0d0d;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+/* ---------- PAGE TITLE ---------- */
+.admin-page-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f1b400;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* ---------- TABLE CARD (consistent width) ---------- */
+.admin-table-card {
+  width: 90%;
+  max-width: 1400px;
+  background: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(241, 180, 0, 0.35);
+}
+
+/* ---------- TABLE BASE STYLE ---------- */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.admin-table thead {
+  background: #f1b400;
+  color: #000;
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 18px 20px;
+  text-align: left;
+}
+
+/* ---------- ROW COLORS ---------- */
+.admin-table tbody tr:nth-child(odd) {
+  background: #2a2515;
+}
+
+.admin-table tbody tr:nth-child(even) {
+  background: #1a1a1a;
+}
+
+/* ---------- BUTTONS ---------- */
+.admin-btn {
+  padding: 8px 14px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: 0.2s ease;
+}
+
+.admin-btn.edit {
+  background: #444;
+  color: #fff;
+}
+
+.admin-btn.edit:hover {
+  background: #666;
+}
+
+.admin-btn.delete {
+  background: #b00020;
+  color: #fff;
+}
+
+.admin-btn.delete:hover {
+  background: #e60028;
+}
+ 
+.admin-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.admin-modal-content {
+  background: #111;
+  padding: 25px;
+  border-radius: 12px;
+  width: 350px;
+  color: #fff;
+  box-shadow: 0 0 18px rgba(255, 217, 0, 0.6);
+}
+
+.admin-modal-content input,
+.admin-modal-content select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  border: 1px solid #555;
+  background: #222;
+  color: #fff;
+}
+
+.admin-modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
